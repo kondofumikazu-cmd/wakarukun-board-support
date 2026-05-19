@@ -1225,6 +1225,100 @@
     'footer.copyright': '© 2026 Fumikazu Kondo. Lahat ng karapatan ay nakalaan.'
   };
 
+  var androidIndexUpdates = {
+    ja: {
+      'env.item1': 'iOS 17.0以上、Android対応',
+      'env.item2': '基本機能は端末内で動作します。Android版の翻訳モデル準備や音声入力では通信が発生する場合があります。',
+      'pro.heading': 'iOS版Pro機能（買い切り）について',
+      'pro.item3': 'iOS版のみの機能です。Android版には現在App内課金やサブスクリプション機能はありません。',
+      'restore.heading': 'iOS版で購入を復元するには',
+      'restore.note': '機種変更や再インストール時もこの手順で復元できます。Android版には購入復元項目はありません。',
+      'faq.a1': 'A. 基本機能は端末内で動作します。iOS版のApp内課金時はAppleのサーバーと通信します。Android版の翻訳モデル準備や音声入力では、Googleまたは端末のシステムサービスと通信が発生する場合があります。',
+      'faq.a2': 'A. 一切保存しません。アプリ内に保存されるのは選択した言語、表示設定、フレーズの編集内容、お気に入り、並び順、iOS版の購入状態のみで、これらは端末内に保存されます。'
+    },
+    en: {
+      'env.item1': 'iOS 17.0 or later, and Android',
+      'env.item2': 'Core features run on the device. On Android, preparing translation models or using voice input may require network communication.',
+      'pro.heading': 'About Pro features on iOS (one-time purchase)',
+      'pro.item3': 'These are iOS-only features. The Android version currently has no in-app purchases or subscriptions.',
+      'restore.heading': 'How to restore a purchase on iOS',
+      'restore.note': 'You can use this same procedure when changing devices or reinstalling the iOS app. The Android version has no purchase restoration item.',
+      'faq.a1': 'A. Core features run on the device. On iOS, in-app purchases communicate with Apple servers. On Android, preparing translation models or using voice input may communicate with Google or device system services.',
+      'faq.a2': 'A. None whatsoever. The app stores only the selected language, display settings, edited phrases, favorites, sort order, and iOS purchase status on the device.'
+    }
+  };
+
+  var androidPrivacyUpdates = {
+    ja: {
+      'header.date': '2026年5月20日',
+      'intro': 'Fumikazu Kondo（以下「開発者」）は、iOS版およびAndroid版アプリ「病院・救急 わかるくんボード」（以下「本アプリ」）における利用者のプライバシー保護を非常に重要なものと考えています。本ポリシーでは、本アプリでの情報の取り扱いについて説明します。',
+      's1.body': '<strong>本アプリは、利用者個人を特定できる情報、利用統計、診療情報、患者情報を開発者のサーバーへ収集・送信しません。</strong>',
+      's2.body': '本アプリは以下の情報を、利用者の端末内に保存します。これらは開発者のサーバーへ送信されることはありません。',
+      's2.item6': 'iOS版におけるApp内課金（Pro機能）の購入状態',
+      's2.android': 'Android版には、現在App内課金やサブスクリプション機能はありません。',
+      's3.body1': '本アプリの基本的なフレーズ閲覧、検索、カテゴリ表示、お気に入り、並び替え、編集内容の保存は端末内で動作します。',
+      's3.body2': 'iOS版では、App内課金の購入や購入の復元時のみ、Apple のサーバー（StoreKit）と通信します。これは Apple が運営する標準の決済プラットフォームを利用するものであり、本アプリは決済情報を一切取得しません。',
+      's3.body3': 'Android版では、App内課金やサブスクリプションのための通信は行いません。一方で、以下の場合に Google または端末のシステムサービスと通信が発生することがあります。',
+      's3.item1': 'ML Kit翻訳モデルのダウンロードまたは準備',
+      's3.item2': '音声入力によるフレーズ検索',
+      's3.item3': 'AndroidシステムまたはGoogle Play開発者サービスによる診断・互換性維持のための通信',
+      's3.audio': 'Android版の音声入力は、端末の音声認識機能を利用して検索語を入力するためのものです。本アプリは音声データを保存しません。',
+      's4.body': '本アプリは、利用者の個人情報、診療情報、患者情報を開発者のサーバーへ収集しないため、開発者がこれらの情報を第三者へ提供することはありません。広告、トラッキング、独自のアクセス解析のためのサードパーティ製ライブラリも使用していません。',
+      's4.body2': 'ただし、Android版で利用している Google ML Kit などのSDKや、端末の音声認識サービスは、モデルのダウンロード、診断、品質維持などのために、Google の定める範囲でデバイス情報、アプリ情報、エラー情報、翻訳設定言語などを扱う場合があります。これらの取り扱いは Google のプライバシーポリシーおよび各サービスの仕様に従います。',
+      's5.body': '本アプリは個人情報を開発者のサーバーへ収集しないため、幅広い年齢の方にご利用いただけます。ただし、本アプリは医療現場や受診時のコミュニケーション補助を目的としたものであり、子どもを主な対象として設計されたアプリではありません。',
+      's6.body1': '本アプリをアンインストールすると、端末内に保存されていたデータ（編集したフレーズ、お気に入り、設定など）は削除されます。',
+      's6.body2': 'iOS版のApp内課金の購入履歴は Apple ID に紐づいて Apple のサーバーに保管されており、再インストール時に「購入を復元」から再有効化できます。これは本アプリではなく Apple による管理です。',
+      's6.android': 'Android版には、現在App内課金やサブスクリプション機能はありません。',
+      's7.heading': '7. 医療情報に関する注意',
+      's7.body': '本アプリは、医療者との文字コミュニケーションを補助するためのツールです。診断、治療方針の決定、緊急時の判断を行うものではありません。緊急時は医療者・救急隊の指示に従ってください。',
+      's8.heading': '8. ポリシーの改定',
+      's8.body': '本ポリシーは必要に応じて改定されることがあります。重要な変更がある場合は、本ページ上で告知します。',
+      's9.heading': '9. お問い合わせ',
+      's9.body': '本ポリシー、または本アプリの情報の取り扱いに関するお問い合わせは下記までお願いいたします。'
+    },
+    en: {
+      'header.date': 'May 20, 2026',
+      'intro': 'Fumikazu Kondo ("the developer") considers the protection of user privacy to be very important in the iOS and Android versions of "Hospital & Emergency Wakarukun Board" ("the app"). This policy describes how information is handled in the app.',
+      's1.body': '<strong>The app does not collect or send personally identifiable information, usage statistics, medical records, or patient information to the developer’s servers.</strong>',
+      's2.body': 'The app stores the following information on the user’s device. It is not sent to the developer’s servers.',
+      's2.item6': 'In-app purchase (Pro feature) status on the iOS version',
+      's2.android': 'The Android version currently has no in-app purchases or subscription features.',
+      's3.body1': 'Core features such as viewing phrases, searching, category display, favorites, reordering, and saving edits run on the device.',
+      's3.body2': 'On iOS, communication with Apple servers (StoreKit) occurs only when making or restoring an in-app purchase. This uses Apple’s standard payment platform; the app does not obtain payment information.',
+      's3.body3': 'On Android, the app does not communicate for in-app purchases or subscriptions. However, communication with Google or device system services may occur in the following cases.',
+      's3.item1': 'Downloading or preparing ML Kit translation models',
+      's3.item2': 'Voice input for phrase search',
+      's3.item3': 'Diagnostics or compatibility maintenance by Android system services or Google Play services',
+      's3.audio': 'Voice input on Android uses the device’s speech recognition feature to enter search terms. The app does not store audio data.',
+      's4.body': 'Because the app does not collect personal information, medical records, or patient information on the developer’s servers, the developer does not provide such information to third parties. The app does not use third-party libraries for advertising, tracking, or independent analytics.',
+      's4.body2': 'However, SDKs such as Google ML Kit used in the Android version, and device speech recognition services, may handle device information, app information, error information, translation language settings, and similar data within the scope defined by Google for model downloads, diagnostics, and quality maintenance. Such handling follows Google’s privacy policy and the specifications of each service.',
+      's5.body': 'Because the app does not collect personal information on the developer’s servers, it can be used by a wide range of ages. However, the app is intended as a communication aid for medical settings and visits, and is not designed primarily for children.',
+      's6.body1': 'Uninstalling the app deletes data stored on the device, such as edited phrases, favorites, and settings.',
+      's6.body2': 'In-app purchase history for the iOS version is tied to the Apple ID and stored on Apple’s servers. It can be re-enabled with "Restore Purchases" after reinstalling. This is managed by Apple, not by the app.',
+      's6.android': 'The Android version currently has no in-app purchases or subscription features.',
+      's7.heading': '7. Medical information notice',
+      's7.body': 'The app is a tool to support written communication with medical professionals. It does not provide diagnoses, determine treatment policies, or make emergency decisions. In emergencies, follow the instructions of medical professionals or emergency personnel.',
+      's8.heading': '8. Changes to this policy',
+      's8.body': 'This policy may be revised as needed. Important changes will be announced on this page.',
+      's9.heading': '9. Contact',
+      's9.body': 'For inquiries about this policy or how the app handles information, please contact us at:'
+    }
+  };
+
+  function mergeI18n(target, source) {
+    if (!target || !source) return;
+    var keys = Object.keys(source);
+    for (var i = 0; i < keys.length; i++) {
+      target[keys[i]] = source[keys[i]];
+    }
+  }
+
+  for (var langIndex = 0; langIndex < SUPPORTED.length; langIndex++) {
+    var updateLang = SUPPORTED[langIndex];
+    mergeI18n(dict.index[updateLang], androidIndexUpdates[updateLang] || androidIndexUpdates.en);
+    mergeI18n(dict.privacy[updateLang], androidPrivacyUpdates[updateLang] || androidPrivacyUpdates.en);
+  }
+
 
   function detectPage() {
     return /privacy/i.test(location.pathname) ? 'privacy' : 'index';
