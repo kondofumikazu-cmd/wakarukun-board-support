@@ -93,6 +93,34 @@
     font-family: inherit;
     cursor: pointer;
   }
+  .machine-translate {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 24px;
+  }
+  .machine-translate-title {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  #google_translate_element {
+    min-height: 36px;
+  }
+  .machine-translate-note {
+    color: var(--fg-dim);
+    font-size: 13px;
+    margin: 8px 0 0;
+  }
+  .goog-te-gadget {
+    color: var(--fg-dim) !important;
+    font-family: inherit !important;
+  }
+  .goog-te-gadget select {
+    max-width: 100%;
+    font: inherit;
+  }
 </style>
 </head>
 <body>
@@ -118,6 +146,12 @@
       <option value="fil">Filipino</option>
     </select>
   </div>
+
+  <section class="machine-translate" aria-label="Google Translate">
+    <strong class="machine-translate-title">Google翻訳（全対応言語）</strong>
+    <div id="google_translate_element"></div>
+    <p class="machine-translate-note">Google翻訳で、このページを対応言語に翻訳できます。サポートURLとドメインは変わりません。</p>
+  </section>
 
   <header>
     <h1><span data-i18n="header.title">病院・救急 わかるくんボード</span> <span class="badge" data-i18n="header.badge">サポート</span></h1>
@@ -199,6 +233,19 @@
   </footer>
 </main>
 
+<script>
+  window.googleTranslateElementInit = function () {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: "ja",
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      },
+      "google_translate_element"
+    );
+  };
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 <script src="i18n.js"></script>
 </body>
 </html>
