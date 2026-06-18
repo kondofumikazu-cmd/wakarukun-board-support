@@ -6082,6 +6082,84 @@
     mergeI18n(dict.privacy[updateLang], androidPrivacyUpdates[updateLang]);
   }
 
+  var mlKitIndexCommon = {
+    "header.subtitle": "A large-text, multilingual medical communication board",
+    "about.body": "Hospital & Emergency Wakarukun Board is a medical communication board for situations where speech is hard to share or where medical staff and users use different languages. It displays fixed phrases in large text so essential information can be shown clearly.",
+    "env.item2": "Basic phrase browsing and card display run on the device. Network access may occur for first-time on-device translation model downloads, purchase or restore, and voice input.",
+    "usage.item3": "Use the gear icon in the top right to manage display language and translation models.",
+    "faq.a1": "A. Phrase browsing, card display, and saved data display run on the device. Network access may occur when ML Kit on-device translation models are first downloaded, when using App Store purchase or restore, or when using voice input. Translation text is not sent to our own online translation server.",
+    "faq.q3": "Q. How does translation work?",
+    "faq.a3": "A. Bilingual display and translation targets are based on languages supported by ML Kit on-device translation. Required models can be downloaded from Settings or on first use, then reused on the device. Unsupported languages are not forced into translation, and existing saved display data is preserved."
+  };
+
+  var mlKitIndexLocalized = {
+    "ja": {
+      "header.subtitle": "大きな文字と多言語で伝える医療筆談ボード",
+      "about.body": "「病院・救急 わかるくんボード」は、声だけでは伝わりにくい場面や、医療者と利用者の言語が異なる場面で、定型フレーズを画面に大きく表示して必要な内容を共有するための医療向けボードです。",
+      "env.item2": "基本的なフレーズ閲覧・カード表示は端末内で動作します。端末内翻訳モデルの初回ダウンロード、購入・復元、音声入力では通信が発生する場合があります。",
+      "usage.item3": "右上の歯車アイコンから表示言語や翻訳モデルを管理できます。",
+      "faq.a1": "A. フレーズ閲覧、カード表示、保存済みデータの表示は端末内で動作します。ML Kit の端末内翻訳モデルを初めて取得するとき、App Store の購入・復元、音声入力の利用時には通信が発生する場合があります。翻訳本文を独自のオンライン翻訳サーバーへ送信することはありません。",
+      "faq.q3": "Q. 翻訳はどのように行われていますか?",
+      "faq.a3": "A. 二言語表示と翻訳対象は、ML Kit の端末内翻訳に対応している言語を基準にしています。必要な翻訳モデルは設定画面または初回利用時にダウンロードし、取得後は端末内モデルで再利用します。対応していない言語は翻訳対象として無理に扱わず、既存カードの表示データは保持します。"
+    },
+    "ko": {
+      "header.subtitle": "큰 글자와 다국어로 전달하는 의료 필담 보드",
+      "about.body": "와카루쿤 보드는 말만으로 전달하기 어렵거나 의료진과 이용자의 언어가 다른 상황에서 정형 문구를 화면에 크게 표시해 필요한 내용을 공유하는 의료용 보드입니다.",
+      "env.item2": "기본 문구 보기와 카드 표시는 기기 내에서 동작합니다. 온디바이스 번역 모델의 최초 다운로드, 구매·복원, 음성 입력에서는 통신이 발생할 수 있습니다.",
+      "usage.item3": "오른쪽 위 톱니바퀴 아이콘에서 표시 언어와 번역 모델을 관리할 수 있습니다.",
+      "faq.a1": "A. 문구 보기, 카드 표시, 저장된 데이터 표시는 기기 내에서 동작합니다. ML Kit 온디바이스 번역 모델을 처음 받을 때, App Store 구매·복원, 음성 입력 사용 시 통신이 발생할 수 있습니다. 번역 본문을 자체 온라인 번역 서버로 보내지 않습니다.",
+      "faq.q3": "Q. 번역은 어떻게 이루어지나요?",
+      "faq.a3": "A. 이중 언어 표시와 번역 대상은 ML Kit 온디바이스 번역 지원 언어를 기준으로 합니다. 필요한 번역 모델은 설정 또는 첫 사용 시 다운로드하고 이후 기기 내 모델로 재사용합니다. 지원하지 않는 언어를 무리하게 번역 대상으로 처리하지 않으며 기존 카드 표시 데이터는 유지됩니다."
+    },
+    "zh-Hans": {
+      "header.subtitle": "用大字和多语言传达的医疗沟通板",
+      "env.item2": "基本短语浏览和卡片显示在设备上运行。首次下载端内翻译模型、购买或恢复购买、使用语音输入时可能会发生网络通信。",
+      "usage.item3": "可通过右上角齿轮图标管理显示语言和翻译模型。",
+      "faq.q3": "Q. 翻译是如何进行的？"
+    },
+    "zh-Hant": {
+      "header.subtitle": "以大字和多語言傳達的醫療溝通板",
+      "env.item2": "基本語句瀏覽與卡片顯示會在裝置上執行。首次下載端內翻譯模型、購買或復原購買、使用語音輸入時可能會發生網路通訊。",
+      "usage.item3": "可透過右上角齒輪圖示管理顯示語言與翻譯模型。",
+      "faq.q3": "Q. 翻譯是如何進行的？"
+    }
+  };
+
+  var mlKitPrivacyCommon = {
+    "header.date": "June 19, 2026",
+    "s3.body1": "Basic phrase browsing, search, category display, favorites, sorting, and saved edits run on the device.",
+    "s3.body2": "On iOS, communication with Apple servers (StoreKit) occurs for in-app purchases and purchase restoration. Communication with Google or device system services may also occur for ML Kit translation model download or preparation and for voice input phrase search.",
+    "s3.body3": "On Android, there is no communication for in-app purchases or subscriptions. Communication with Google or device system services may occur for ML Kit translation model download or preparation, voice input phrase search, and diagnostics or compatibility maintenance through Android or Google Play services.",
+    "s3.item1": "ML Kit translation model download or preparation",
+    "s3.item2": "Phrase search by voice input",
+    "s3.item3": "Diagnostics and compatibility maintenance through Android or Google Play services",
+    "s3.audio": "Voice input uses the device speech recognition function to enter search text. The app does not store audio data.",
+    "s4.body2": "However, Google ML Kit and device speech recognition services used by the iOS and Android apps may handle device information, app information, error information, translation language settings, and similar data within the scope defined by Google, Apple, or the OS provider for model downloads, diagnostics, and service quality. Their handling follows the privacy policies and specifications of those services."
+  };
+
+  var mlKitPrivacyLocalized = {
+    "ja": {
+      "header.date": "2026年6月19日",
+      "s3.body1": "本アプリの基本的なフレーズ閲覧、検索、カテゴリ表示、お気に入り、並び替え、編集内容の保存は端末内で動作します。",
+      "s3.body2": "iOS版では、App内課金の購入や購入の復元時に Apple のサーバー（StoreKit）と通信します。また、ML Kit翻訳モデルのダウンロードまたは準備、音声入力によるフレーズ検索で、Google または端末のシステムサービスと通信が発生することがあります。",
+      "s3.body3": "Android版では、App内課金やサブスクリプションのための通信は行いません。一方で、ML Kit翻訳モデルのダウンロードまたは準備、音声入力によるフレーズ検索、AndroidシステムまたはGoogle Play開発者サービスによる診断・互換性維持のために通信が発生することがあります。",
+      "s3.item1": "ML Kit翻訳モデルのダウンロードまたは準備",
+      "s3.item2": "音声入力によるフレーズ検索",
+      "s3.item3": "AndroidシステムまたはGoogle Play開発者サービスによる診断・互換性維持のための通信",
+      "s3.audio": "音声入力は、端末の音声認識機能を利用して検索語を入力するためのものです。本アプリは音声データを保存しません。",
+      "s4.body2": "ただし、iOS版およびAndroid版で利用している Google ML Kit などのSDKや、端末の音声認識サービスは、モデルのダウンロード、診断、品質維持などのために、Google やOS提供元の定める範囲でデバイス情報、アプリ情報、エラー情報、翻訳設定言語などを扱う場合があります。これらの取り扱いは Google、Apple、および各サービスのプライバシーポリシーや仕様に従います。"
+    }
+  };
+
+  var mlKitLangs = Object.keys(dict.index);
+  for (var mlKitLangIndex = 0; mlKitLangIndex < mlKitLangs.length; mlKitLangIndex++) {
+    var mlKitLang = mlKitLangs[mlKitLangIndex];
+    mergeI18n(dict.index[mlKitLang], mlKitIndexCommon);
+    mergeI18n(dict.index[mlKitLang], mlKitIndexLocalized[mlKitLang]);
+    mergeI18n(dict.privacy[mlKitLang], mlKitPrivacyCommon);
+    mergeI18n(dict.privacy[mlKitLang], mlKitPrivacyLocalized[mlKitLang]);
+  }
+
 
   function detectPage() {
     return /privacy/i.test(location.pathname) ? 'privacy' : 'index';
